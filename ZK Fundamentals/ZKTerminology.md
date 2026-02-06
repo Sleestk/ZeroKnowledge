@@ -148,15 +148,15 @@ Many ZK proof systems require a **setup phase** that generates public parameters
 
 ### Soundness
 
-**Soundness** ensures that a dishonest prover cannot convince the verifier of a false statement except with negligible probability.
+It must be practically impossible for a dishonest prover to convice an honest verfier with an invalid witness.
 
 ### Completeness
 
-**Completeness** ensures that an honest prover can always convince the verifier of a true statement.
+If the statement is valid, a prover must always be able to convice a verifier if they have knowledge of the witness.
 
-### Zero-Knowledge Property
+### Zero-Knowledge
 
-The **zero-knowledge property** ensures that the verifier learns nothing beyond the validity of the statement. The proof reveals no information about the witness.
+The verifier must learn nothing other than the provers knowledge of a witness to the statement.
 
 ## Common ZK Proof Systems
 
